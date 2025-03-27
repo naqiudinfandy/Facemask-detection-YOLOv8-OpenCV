@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection | YOLOv8</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Face Mask Detection Section -->
+    <div class="container">
+        <h1>🛡️ Face Mask Detection</h1>
+        <p>Detect face mask usage in real-time using AI-powered YOLOv8.</p>
+
+        <button id="start-btn">📷 Start Camera</button>
+
+        <div id="video-container" class="video-container">
+            <img id="video-feed" src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+    </div>
+
+    <!-- Project Information Section -->
+    <div class="project-container">
+        <!-- About Project -->
+        <div class="project-box">
+            <h2>📌 About This Project</h2>
+            <p>
+                This project uses <strong>YOLOv8</strong>, <strong>OpenCV</strong>, and <strong>Flask</strong> to detect face mask usage in real-time. It categorizes individuals as:
+            </p>
+            <ul>
+                <li>✅ <strong>Proper Mask:</strong> Mask is worn correctly.</li>
+                <li>⚠️ <strong>Incorrect Mask:</strong> Mask is worn improperly.</li>
+                <li>❌ <strong>No Mask:</strong> No mask detected.</li>
+            </ul>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="project-box">
+            <h2>🛠 Technologies Used</h2>
+            <div class="tech-list">
+                <p><strong>Backend:</strong> <br>Python (Flask, OpenCV, YOLOv8)</p>
+                <p><strong>Frontend:</strong> <br>HTML, CSS, JavaScript</p>
+                <p><strong>Machine Learning:</strong> <br>Deep Learning for object detection</p>
+            </div>
+        </div>
+
+        <!-- Evaluation Metrics -->
+        <div class="project-box">
+            <h2>📊 Evaluation Metrics</h2>
+            <ul class="metrics-list">
+                <li>🎯 <strong>Precision:</strong> 0.8981</li>
+                <li>📈 <strong>Recall:</strong> 0.8483</li>
+                <li>🏆 <strong>mAP50:</strong> 0.9053</li>
+                <li>📊 <strong>mAP50-95:</strong> 0.6355</li>
+            </ul>
+        </div>
+
+        <!-- Future Improvements -->
+        <div class="project-box">
+            <h2>🚀 Future Improvements</h2>
+            <ul>
+                <li>🎨 <strong>Enhanced UI:</strong> Implement Angular for a dynamic and interactive frontend.</li>
+                <li>🎯 <strong>Better Accuracy:</strong> Train with a more diverse dataset.</li>
+                <li>📈 <strong>Expanded Data Collection:</strong> Gather real-world images for better generalization.</li>
+                <li>🔗 <strong>Cloud Deployment:</strong> Host the system online for remote access.</li>
+                <li>📹 <strong>Optimized Performance:</strong> Reduce latency for real-time efficiency.</li>
+                <li>📱 <strong>Mobile-Friendly:</strong> Develop a responsive UI for mobile users.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 <span class="highlight">Muhammad Naqiudin</span> | 
+            <a href="mailto:naqiudin73@gmail.com">📧 naqiudin73@gmail.com</a> | 
+            <a href="https://github.com/naqiudinfandy" target="_blank">🐙 GitHub: @naqiudinfandy</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# Dataset YAML for YOLOv8 Face Mask Detection
+path: C:/NaqibWorks/project/Yolo/dataset  # Base dataset directory
+train: train/images  # Train images folder (relative to 'path')
+val: val/images  # Validation images folder (relative to 'path')
+test: test/images  # Test images folder (optional)
+
+# Class names
+names:
+  0: with_mask
+  1: mask_weared_incorrect
+  2: without_mask
+
+# Hyperparameters
+nc: 3  # Number of classes
+# imgsz: 720  # Increased image size for better detection
+# epochs: 100  # Increase epochs to allow better learning
+# batch: 16  # Batch size (adjust based on GPU availability)
+
+# # Data Augmentation
+# augment: True  # Enable augmentation
+# mosaic: 1.0  # Mosaic augmentation for better generalization
+# hsv_h: 0.015  # Adjust hue to improve color variations
+# hsv_s: 0.7  # Adjust saturation for better contrast
+# hsv_v: 0.4  # Adjust brightness to simulate lighting conditions
+# flipud: 0.5  # Random vertical flipping
+# fliplr: 0.5  # Random horizontal flipping
+
+# # Training Hyperparameters
+# lr0: 0.001  # Initial learning rate
+# momentum: 0.937  # Momentum for SGD optimizer
+# weight_decay: 0.0005  # Weight decay for regularization
+# warmup_epochs: 3.0  # Warmup period to prevent sudden weight updates
+# cos_lr: True  # Enable cosine learning rate decay
+
+# # Compute Settings
+# device: "cuda"  # Use GPU for training (if available)
+# workers: 8  # Number of CPU workers for data loading
